@@ -1,0 +1,116 @@
+
+
+#app {
+
+	#app-inner {
+
+		#game {
+
+			&.inactive {
+
+				.dialTopLeft {
+					background: url(../img/dial_tl.png) top left no-repeat;
+			        @media only screen and (max-width: 720px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-720);
+			        }
+			        @media only screen and (max-width: 320px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-320);
+			        }			        
+				}
+				.dialTopRight {
+			        background: url(../img/dial_tr.png) top right no-repeat;
+			        @media only screen and (max-width: 720px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-720);
+			        }
+			        @media only screen and (max-width: 320px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-320);
+			        }
+			    }
+				.dialBottomRight {
+			        background: url(../img/dial_br.png) bottom right no-repeat;
+			        @media only screen and (max-width: 720px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-720);
+			        }
+			        @media only screen and (max-width: 320px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-320);
+			        }
+			    }
+				.dialBottomLeft {
+			        background: url(../img/dial_bl.png) bottom left no-repeat;
+			        @media only screen and (max-width: 720px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-720);
+			        }
+			        @media only screen and (max-width: 320px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-320);
+			        }
+			    }
+
+			    #statusInactive {
+					visibility: inherit;
+				}
+				#statusActive {
+					visibility: hidden;
+				}
+
+				#feedback {
+					visibility: hidden;
+				}
+			}
+
+			&.active {
+
+				.dialTopLeft {
+					background: url(../img/dial_tl_red.png) top left no-repeat;
+			        @media only screen and (max-width: 720px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-720);
+			        }
+			        @media only screen and (max-width: 320px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-320);
+			        }
+				}
+				.dialTopRight {
+			        background: url(../img/dial_tr_red.png) top right no-repeat;
+			        @media only screen and (max-width: 720px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-720);
+			        }
+			        @media only screen and (max-width: 320px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-320);
+			        }
+			    }
+				.dialBottomRight {
+			        background: url(../img/dial_br_red.png) bottom right no-repeat;
+			        @media only screen and (max-width: 720px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-720);
+			        }
+			        @media only screen and (max-width: 320px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-320);
+			        }
+			    }
+				.dialBottomLeft {
+			        background: url(../img/dial_bl_red.png) bottom left no-repeat;
+			        @media only screen and (max-width: 720px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-720);
+			        }
+			        @media only screen and (max-width: 320px) and (orientation:portrait){
+			            @include prefix('background-size', $img-scale-320);
+			        }
+			    }
+
+				#statusInactive {
+					visibility: hidden;
+				}
+				#statusActive {
+					visibility: visible;
+				}
+
+				#feedback {
+					visibility: visible;
+				}
+			}			
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jaguar</title>
+    <meta name="description" content="">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    <div id="app" class="portrait">
+        <div id="app-inner">
+            <div id="intro">
+                <div class="contentCentre">
+                    <h1>Connect your villain device</h1>
+                    <p>Enter the code to connect your device and control the lock.</p>
+                    <input id="codeInput" type="text" name="code" maxlength="5">
+                    <a href="#" class="btn-border" id="connectDeviceButton">Connect device</a>
+                    <div id="speakerIcon"><p class="small-red">Turn up your volume to listen for clues!</p></div>
+                    <div id="heaphonesIcon"><p class="small-red">Connect your headphones for the best experience.</p></div>
+                </div>
+            </div>
+            <img id="logo" src="img/logo.png" alt="Jaguar">
+        </div>    
+    </div>        
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script>
+
+    /**
+     * Accesses input code to redirect to app.
+     * @return {void}
+     */
+    connectDeviceButton.onclick = function() {
+        var code = document.getElementById('codeInput').value;
+        if(code != undefined && code.length == 5)
+        {
+            var url = "http://goo.gl/richmedia/" + code.toLowerCase();
+            window.location = url;
+        }
+    }
+
+    </script>
+    </body>
+</html>

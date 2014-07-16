@@ -1,0 +1,495 @@
+/* 
+FONTS --------------------- */
+@font-face {
+  font-family: 'jaguar-regular';
+  src: url("../fonts/jaguar-regular-webfont.eot");
+  src: url("../fonts/jaguar-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/jaguar-regular-webfont.woff") format("woff"), url("../fonts/jaguar-regular-webfont.ttf") format("truetype"), url("../fonts/jaguar-regular-webfont.svg#jaguarregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova-semibold';
+  src: url("../fonts/proximanova-semibold-webfont.eot");
+  src: url("../fonts/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ionb-minimal';
+  src: url("../fonts/ionb-minimal-webfont.eot");
+  src: url("../fonts/ionb-minimal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ionb-minimal-webfont.woff") format("woff"), url("../fonts/ionb-minimal-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+COLOUR PALETTE --------------------- */
+/* 
+TYPOGRAPHY --------------------- */
+/* 
+SCREEN BREAK POINTS --------------------- */
+/* line 2, ../sass/partials/_typography.scss */
+body {
+  text-transform: uppercase;
+}
+
+/* line 6, ../sass/partials/_typography.scss */
+h1, h2, h3 {
+  color: white;
+  font-weight: normal;
+  font-family: "jaguar-regular", arial, sans-serif;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+/* line 14, ../sass/partials/_typography.scss */
+h1 {
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+/* line 19, ../sass/partials/_typography.scss */
+h1.large-red {
+  color: #ff6868;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+/* line 26, ../sass/partials/_typography.scss */
+h2 {
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* line 32, ../sass/partials/_typography.scss */
+h3 {
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* line 38, ../sass/partials/_typography.scss */
+a {
+  color: #ff6868;
+  text-decoration: underline;
+}
+
+/* line 43, ../sass/partials/_typography.scss */
+p {
+  color: #cececc;
+  font-family: "proxima_nova-semibold", arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.6em;
+  margin-top: 0;
+  /*a {
+  	text-decoration: none;
+  	position: relative;
+  	&:after {
+  		content: '';
+  		width: 100%;
+  		position: absolute;
+  		left: 0;
+  		bottom: -2px;
+  		border-bottom: solid 1px $red;
+  	}
+  	&.noBorder:after {
+  		border-bottom: none;
+  	}
+  }*/
+}
+/* line 50, ../sass/partials/_typography.scss */
+p.small {
+  font-size: 10px;
+  line-height: 1.2em;
+  margin-bottom: 4px;
+}
+/* line 56, ../sass/partials/_typography.scss */
+p.small-red {
+  color: #ff6868;
+  font-size: 10px;
+  line-height: 1.2em;
+  margin-bottom: 4px;
+}
+
+/* line 80, ../sass/partials/_typography.scss */
+#lockNumber {
+  color: #ff6868;
+  font-family: "ionb-minimal", arial, sans-serif;
+  font-size: 72px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+/* line 90, ../sass/partials/_typography.scss */
+#countdown {
+  color: #ff6868;
+  font-family: "ionb-minimal", arial, sans-serif;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* line 99, ../sass/partials/_typography.scss */
+.gameTime {
+  color: #ff6868;
+  font-family: "ionb-minimal", arial, sans-serif;
+  font-size: 44px;
+  /*line-height: 1.2em;*/
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+/* line 108, ../sass/partials/_typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 112, ../sass/partials/_typography.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 2, ../sass/partials/_layout.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 8, ../sass/partials/_layout.scss */
+body {
+  background: #000;
+}
+
+/* line 13, ../sass/partials/_layout.scss */
+#app {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 20, ../sass/partials/_layout.scss */
+#app #app-inner {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /*z-index: 2;*/
+}
+/* line 32, ../sass/partials/_layout.scss */
+#app #logo {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 32, ../sass/partials/_layout.scss */
+  #app #logo {
+    width: 30%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 720px) and (orientation: landscape) {
+  /* line 32, ../sass/partials/_layout.scss */
+  #app #logo {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 32, ../sass/partials/_layout.scss */
+  #app #logo {
+    width: 30%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: landscape) {
+  /* line 32, ../sass/partials/_layout.scss */
+  #app #logo {
+    visibility: hidden;
+  }
+}
+/* line 52, ../sass/partials/_layout.scss */
+#app #rotateBackOverlay, #app #gameLoseOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+/* line 61, ../sass/partials/_layout.scss */
+#app #rotateBackOverlay {
+  background: url(../img/rotate_back_overlay.png) top left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 67, ../sass/partials/_layout.scss */
+#app #gameLoseOverlay {
+  background: url(../img/rotate_back_overlay.png) top left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 73, ../sass/partials/_layout.scss */
+#app .dialTopLeft {
+  position: absolute;
+  width: 195px;
+  height: 85px;
+  left: 0;
+  top: 0;
+  background: url(../img/dial_tl.png) top left no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 73, ../sass/partials/_layout.scss */
+  #app .dialTopLeft {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 73, ../sass/partials/_layout.scss */
+  #app .dialTopLeft {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 88, ../sass/partials/_layout.scss */
+#app .dialTopRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 184px;
+  height: 185px;
+  background: url(../img/dial_tr.png) top right no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 88, ../sass/partials/_layout.scss */
+  #app .dialTopRight {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 88, ../sass/partials/_layout.scss */
+  #app .dialTopRight {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 103, ../sass/partials/_layout.scss */
+#app .dialBottomRight {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 162px;
+  height: 70px;
+  background: url(../img/dial_br.png) bottom right no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 103, ../sass/partials/_layout.scss */
+  #app .dialBottomRight {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 103, ../sass/partials/_layout.scss */
+  #app .dialBottomRight {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 118, ../sass/partials/_layout.scss */
+#app .dialBottomLeft {
+  position: absolute;
+  width: 179px;
+  height: 180px;
+  left: 0;
+  bottom: 0;
+  background: url(../img/dial_bl.png) bottom left no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 118, ../sass/partials/_layout.scss */
+  #app .dialBottomLeft {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 118, ../sass/partials/_layout.scss */
+  #app .dialBottomLeft {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+
+/* line 134, ../sass/partials/_layout.scss */
+.contentCentre, .gameContentCentre {
+  width: 86%;
+  left: 7%;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+/* line 143, ../sass/partials/_layout.scss */
+.gameContentCentre {
+  top: 18%;
+}
+
+/* line 3, ../sass/partials/_buttons.scss */
+.btn, .btn-border, .btn-replay {
+  color: #ff6868;
+  font-family: "proxima_nova-semibold", arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 22, ../sass/partials/_buttons.scss */
+.btn {
+  font-size: 10px;
+}
+
+/* line 27, ../sass/partials/_buttons.scss */
+.btn-border, .btn-replay {
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 16px 15px;
+  margin-bottom: 14px;
+  display: inline-block;
+  border: 1px solid rgba(255, 104, 104, 0.7);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*a .btn-replay  {
+    display:block;
+    width:100%;
+    border:1px solid orange;
+    text-align:center;
+    line-height:50px;
+}
+
+a:before .btn-replay {
+    content:url(../img/replay_icon.png);
+    display:inline-block;
+    margin-right:5px;
+}*/
+/* line 61, ../sass/partials/_buttons.scss */
+.restart-btn {
+  background: url(../img/replayicon.png) 0 center no-repeat;
+  padding-left: 23px;
+  color: #ff6868;
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/partials/_forms.scss */
+input {
+  color: #ff6868;
+  font-family: "proxima_nova-semibold", arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  padding: 16px 15px;
+  margin-bottom: 14px;
+  display: inline-block;
+  border: 1px solid rgba(255, 104, 104, 0.7);
+  border-radius: 0px;
+  background-color: #000;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/modules/_intro.scss */
+#intro .contentCentre, #intro .gameContentCentre {
+  top: 6%;
+}
+/* line 8, ../sass/modules/_intro.scss */
+#intro #speakerIcon, #intro #heaphonesIcon {
+  height: 36px;
+  line-height: 36px;
+}
+/* line 13, ../sass/modules/_intro.scss */
+#intro #speakerIcon p, #intro #heaphonesIcon p {
+  margin: 0 0 8px 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 19, ../sass/modules/_intro.scss */
+#intro #speakerIcon {
+  background: url(../img/speaker_icon.png) no-repeat;
+  -webkit-background-size: 56px, 45px;
+  -moz-background-size: 56px, 45px;
+  -ms-background-size: 56px, 45px;
+  -o-background-size: 56px, 45px;
+  background-size: 56px, 45px;
+  -webkit-background-position: -10px, center;
+  -moz-background-position: -10px, center;
+  -ms-background-position: -10px, center;
+  -o-background-position: -10px, center;
+  background-position: -10px, center;
+}
+/* line 26, ../sass/modules/_intro.scss */
+#intro #heaphonesIcon {
+  background: url(../img/heaphones_icon.png) no-repeat;
+  -webkit-background-size: 70px, 61px;
+  -moz-background-size: 70px, 61px;
+  -ms-background-size: 70px, 61px;
+  -o-background-size: 70px, 61px;
+  background-size: 70px, 61px;
+  -webkit-background-position: -15px, center;
+  -moz-background-position: -15px, center;
+  -ms-background-position: -15px, center;
+  -o-background-position: -15px, center;
+  background-position: -15px, center;
+}

@@ -1,0 +1,81 @@
+
+/* 
+FONTS --------------------- */
+
+@font-face {
+    font-family: 'jaguar-regular';
+    src: url('../fonts/jaguar-regular-webfont.eot');
+    src: url('../fonts/jaguar-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jaguar-regular-webfont.woff') format('woff'),
+         url('../fonts/jaguar-regular-webfont.ttf') format('truetype'),
+         url('../fonts/jaguar-regular-webfont.svg#jaguarregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'proxima_nova-semibold';
+    src: url('../fonts/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ionb-minimal';
+    src: url('../fonts/ionb-minimal-webfont.eot');
+    src: url('../fonts/ionb-minimal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ionb-minimal-webfont.woff') format('woff'),
+         url('../fonts/ionb-minimal-webfont.ttf') format('truetype')/*,
+         url('../fonts/ionb-minimal-webfont.svg#proxima_novasemibold') format('svg')*/;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 
+COLOUR PALETTE --------------------- */
+
+$link-colour:           #ff6868;
+
+// Colours
+$red:                   #ff6868;
+$green:                 #00ffae;
+
+// Grey scale
+$grey:                  #cececc;
+$black:                 #000000;
+$white:       	        #ffffff;
+
+
+$jaguar-button-colour:  #9e1b32;
+
+
+/* 
+TYPOGRAPHY --------------------- */
+
+$base-font:             "proxima_nova-semibold", arial, sans-serif;
+$secondary-font:        "jaguar-regular", arial, sans-serif;
+$digit-font:            "ionb-minimal", arial, sans-serif;
+
+$base-font-weight:      normal;
+
+$large-font-size:       27px;
+
+$h1-size:               17px;
+$h2-size:               15px;
+$h3-size:               12px;
+
+$base-font-size:        11px;
+$small-font-size:       10px;
+
+
+/* 
+SCREEN BREAK POINTS --------------------- */
+
+$img-scale-320:    60%;
+$img-scale-720:    70%;

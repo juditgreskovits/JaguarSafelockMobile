@@ -1,0 +1,34 @@
+
+#intro {
+
+	.contentCentre {
+		top: 6%;
+	}
+
+	%instruction {
+  		height: 36px;
+  		line-height: 36px;
+	}
+
+	%instruction p {
+		margin: 0 0 8px 60px;
+		display: inline-block;
+  		vertical-align: middle; 
+	}
+
+	#speakerIcon {
+		@extend %instruction;
+		background: url(../img/speaker_icon.png) no-repeat;
+		@include prefix('background-size', '56px, 45px');
+		@include prefix('background-position', '-10px, center');
+	}
+
+	#heaphonesIcon {
+		@extend %instruction;
+		background: url(../img/heaphones_icon.png) no-repeat;
+		@include prefix('background-size', '70px, 61px');
+		@include prefix('background-position', '-15px, center');
+	}
+
+}
+

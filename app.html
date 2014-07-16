@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jaguar</title>
+    <meta name="description" content="">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="https://www.gstatic.com/doubleclick/studio/innovation/channelconnect/channel_connect_13394582.js"></script>  
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/ChannelConnectWrapper.js"></script>
+    <script src="js/FingerprintAnimation.js"></script>
+    <script src="js/DragControl.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function updateOutput(message) {
+            // $('#output').text(message);
+        }
+    </script>
+</head>
+<body onload="spark44.Main()">
+    <div id="app" class="portrait">
+        <div id="app-inner">
+            <p id="output" style="position:absolute;width:100%;"></p>
+            <div id="game" class="inactive">
+                <div class="dialTopLeft"></div>
+                <div class="dialTopRight"></div>
+                <div class="dialBottomLeft"></div>
+                <div class="dialBottomRight"></div> 
+                <div id="menu">
+                    <p id="statusInactive" class="status">Not active</p>
+                    <p id="statusActive" class="status">Active</p>
+                </div>
+                <div id="activateDial" class="gameContentCentre">
+                    <h1>Activate the dial</h1>
+                    <p>Hold your thumb to activate the device. Rotate your phone to crack the lock.</p>
+                </div>
+                <div id="controlDial" class="gameContentCentre">
+                    <h1>Control the dial</h1>
+                    <p>Hold and slide the circle to control the dial. Move your finger further away from the centre to adjust the speed.</p>
+                </div>
+                <div id="controls"></div>
+            </div>
+
+            <div id="gameWin">
+                <div class="dialTopLeft"></div>
+                <div class="dialTopRight"></div>
+                <div class="dialBottomLeft"></div>
+                <div class="dialBottomRight"></div>
+                <div class="contentCentre">
+                    <h1>You cracked it!</h1>
+                    <p id="gameWinTime" class="gameTime">00:00:000</p>
+                </div>
+            </div>
+
+            <div id="gameLose">
+                <div id="rotateBackOverlay"></div>
+                <div class="contentCentre">
+                    <h1 class="large-red">Game's up</h1>
+                    <p>Nice try, but you are not light fingered enough to join the gang yet.</p>
+                </div>
+            </div>
+
+            <div id="rotateBack">
+                <div id="rotateBackOverlay"></div>
+                <p class="small">Connection interrupted</p>
+                <div id="rotateBackMessage">
+                    <div id="rotateBackIcon"></div>
+                    <p class="small-red">Rotate device back to portrait</p>
+                </div>
+                
+            </div>
+            <img id="logo" src="img/logo.png" alt="Jaguar">
+        </div>    
+    </div>
+    </body>
+</html>

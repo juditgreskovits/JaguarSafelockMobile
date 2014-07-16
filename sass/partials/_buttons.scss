@@ -1,0 +1,70 @@
+
+
+%btn {
+    color: $red;
+    font-family: $base-font;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+        
+    }
+
+    &:active {
+        
+    }
+
+}
+
+
+.btn {
+    @extend %btn;
+    font-size: $small-font-size;
+}
+
+.btn-border {
+    @extend %btn;
+    font-size: $h2-size;
+    text-align: center;  
+    width: 100%;
+    padding: 16px 15px;  
+    margin-bottom: 14px;
+    display: inline-block;
+    border: 1px solid rgba($red, 0.7);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;     
+}
+
+.btn-replay {
+    @extend .btn-border;
+}
+
+
+
+/*a .btn-replay  {
+    display:block;
+    width:100%;
+    border:1px solid orange;
+    text-align:center;
+    line-height:50px;
+}
+
+a:before .btn-replay {
+    content:url(../img/replay_icon.png);
+    display:inline-block;
+    margin-right:5px;
+}*/
+
+.restart-btn {
+    background: url(../img/replayicon.png) 0 center no-repeat;
+    padding-left: 23px;
+    color: $link-colour;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}

@@ -1,0 +1,804 @@
+/* 
+FONTS --------------------- */
+@font-face {
+  font-family: 'jaguar-regular';
+  src: url("../fonts/jaguar-regular-webfont.eot");
+  src: url("../fonts/jaguar-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/jaguar-regular-webfont.woff") format("woff"), url("../fonts/jaguar-regular-webfont.ttf") format("truetype"), url("../fonts/jaguar-regular-webfont.svg#jaguarregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova-semibold';
+  src: url("../fonts/proximanova-semibold-webfont.eot");
+  src: url("../fonts/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ionb-minimal';
+  src: url("../fonts/ionb-minimal-webfont.eot");
+  src: url("../fonts/ionb-minimal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ionb-minimal-webfont.woff") format("woff"), url("../fonts/ionb-minimal-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+COLOUR PALETTE --------------------- */
+/* 
+TYPOGRAPHY --------------------- */
+/* 
+SCREEN BREAK POINTS --------------------- */
+/* line 2, ../sass/partials/_typography.scss */
+body {
+  text-transform: uppercase;
+}
+
+/* line 6, ../sass/partials/_typography.scss */
+h1, h2, h3 {
+  color: white;
+  font-weight: normal;
+  font-family: "jaguar-regular", arial, sans-serif;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+/* line 14, ../sass/partials/_typography.scss */
+h1 {
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+/* line 19, ../sass/partials/_typography.scss */
+h1.large-red {
+  color: #ff6868;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+/* line 26, ../sass/partials/_typography.scss */
+h2 {
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* line 32, ../sass/partials/_typography.scss */
+h3 {
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* line 38, ../sass/partials/_typography.scss */
+a {
+  color: #ff6868;
+  text-decoration: underline;
+}
+
+/* line 43, ../sass/partials/_typography.scss */
+p {
+  color: #cececc;
+  font-family: "proxima_nova-semibold", arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.6em;
+  margin-top: 0;
+  /*a {
+  	text-decoration: none;
+  	position: relative;
+  	&:after {
+  		content: '';
+  		width: 100%;
+  		position: absolute;
+  		left: 0;
+  		bottom: -2px;
+  		border-bottom: solid 1px $red;
+  	}
+  	&.noBorder:after {
+  		border-bottom: none;
+  	}
+  }*/
+}
+/* line 50, ../sass/partials/_typography.scss */
+p.small {
+  font-size: 10px;
+  line-height: 1.2em;
+  margin-bottom: 4px;
+}
+/* line 56, ../sass/partials/_typography.scss */
+p.small-red {
+  color: #ff6868;
+  font-size: 10px;
+  line-height: 1.2em;
+  margin-bottom: 4px;
+}
+
+/* line 80, ../sass/partials/_typography.scss */
+#lockNumber {
+  color: #ff6868;
+  font-family: "ionb-minimal", arial, sans-serif;
+  font-size: 72px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+/* line 90, ../sass/partials/_typography.scss */
+#countdown {
+  color: #ff6868;
+  font-family: "ionb-minimal", arial, sans-serif;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* line 99, ../sass/partials/_typography.scss */
+.gameTime {
+  color: #ff6868;
+  font-family: "ionb-minimal", arial, sans-serif;
+  font-size: 44px;
+  /*line-height: 1.2em;*/
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+/* line 108, ../sass/partials/_typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 112, ../sass/partials/_typography.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 2, ../sass/partials/_layout.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 8, ../sass/partials/_layout.scss */
+body {
+  background: #000;
+}
+
+/* line 13, ../sass/partials/_layout.scss */
+#app {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 20, ../sass/partials/_layout.scss */
+#app #app-inner {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /*z-index: 2;*/
+}
+/* line 32, ../sass/partials/_layout.scss */
+#app #logo {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 32, ../sass/partials/_layout.scss */
+  #app #logo {
+    width: 30%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 720px) and (orientation: landscape) {
+  /* line 32, ../sass/partials/_layout.scss */
+  #app #logo {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 32, ../sass/partials/_layout.scss */
+  #app #logo {
+    width: 30%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: landscape) {
+  /* line 32, ../sass/partials/_layout.scss */
+  #app #logo {
+    visibility: hidden;
+  }
+}
+/* line 52, ../sass/partials/_layout.scss */
+#app #rotateBackOverlay, #app #gameLoseOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+/* line 61, ../sass/partials/_layout.scss */
+#app #rotateBackOverlay {
+  background: url(../img/rotate_back_overlay.png) top left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 67, ../sass/partials/_layout.scss */
+#app #gameLoseOverlay {
+  background: url(../img/rotate_back_overlay.png) top left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 73, ../sass/partials/_layout.scss */
+#app .dialTopLeft {
+  position: absolute;
+  width: 195px;
+  height: 85px;
+  left: 0;
+  top: 0;
+  background: url(../img/dial_tl.png) top left no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 73, ../sass/partials/_layout.scss */
+  #app .dialTopLeft {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 73, ../sass/partials/_layout.scss */
+  #app .dialTopLeft {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 88, ../sass/partials/_layout.scss */
+#app .dialTopRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 184px;
+  height: 185px;
+  background: url(../img/dial_tr.png) top right no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 88, ../sass/partials/_layout.scss */
+  #app .dialTopRight {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 88, ../sass/partials/_layout.scss */
+  #app .dialTopRight {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 103, ../sass/partials/_layout.scss */
+#app .dialBottomRight {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 162px;
+  height: 70px;
+  background: url(../img/dial_br.png) bottom right no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 103, ../sass/partials/_layout.scss */
+  #app .dialBottomRight {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 103, ../sass/partials/_layout.scss */
+  #app .dialBottomRight {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 118, ../sass/partials/_layout.scss */
+#app .dialBottomLeft {
+  position: absolute;
+  width: 179px;
+  height: 180px;
+  left: 0;
+  bottom: 0;
+  background: url(../img/dial_bl.png) bottom left no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 118, ../sass/partials/_layout.scss */
+  #app .dialBottomLeft {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 118, ../sass/partials/_layout.scss */
+  #app .dialBottomLeft {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+
+/* line 134, ../sass/partials/_layout.scss */
+.contentCentre, .gameContentCentre {
+  width: 86%;
+  left: 7%;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+/* line 143, ../sass/partials/_layout.scss */
+.gameContentCentre {
+  top: 18%;
+}
+
+/* line 11, ../sass/partials/_states.scss */
+#app #app-inner #game.inactive .dialTopLeft {
+  background: url(../img/dial_tl.png) top left no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 11, ../sass/partials/_states.scss */
+  #app #app-inner #game.inactive .dialTopLeft {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 11, ../sass/partials/_states.scss */
+  #app #app-inner #game.inactive .dialTopLeft {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 20, ../sass/partials/_states.scss */
+#app #app-inner #game.inactive .dialTopRight {
+  background: url(../img/dial_tr.png) top right no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 20, ../sass/partials/_states.scss */
+  #app #app-inner #game.inactive .dialTopRight {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 20, ../sass/partials/_states.scss */
+  #app #app-inner #game.inactive .dialTopRight {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 29, ../sass/partials/_states.scss */
+#app #app-inner #game.inactive .dialBottomRight {
+  background: url(../img/dial_br.png) bottom right no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 29, ../sass/partials/_states.scss */
+  #app #app-inner #game.inactive .dialBottomRight {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 29, ../sass/partials/_states.scss */
+  #app #app-inner #game.inactive .dialBottomRight {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 38, ../sass/partials/_states.scss */
+#app #app-inner #game.inactive .dialBottomLeft {
+  background: url(../img/dial_bl.png) bottom left no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 38, ../sass/partials/_states.scss */
+  #app #app-inner #game.inactive .dialBottomLeft {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 38, ../sass/partials/_states.scss */
+  #app #app-inner #game.inactive .dialBottomLeft {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 48, ../sass/partials/_states.scss */
+#app #app-inner #game.inactive #statusInactive {
+  visibility: inherit;
+}
+/* line 51, ../sass/partials/_states.scss */
+#app #app-inner #game.inactive #statusActive {
+  visibility: hidden;
+}
+/* line 55, ../sass/partials/_states.scss */
+#app #app-inner #game.inactive #feedback {
+  visibility: hidden;
+}
+/* line 62, ../sass/partials/_states.scss */
+#app #app-inner #game.active .dialTopLeft {
+  background: url(../img/dial_tl_red.png) top left no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 62, ../sass/partials/_states.scss */
+  #app #app-inner #game.active .dialTopLeft {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 62, ../sass/partials/_states.scss */
+  #app #app-inner #game.active .dialTopLeft {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 71, ../sass/partials/_states.scss */
+#app #app-inner #game.active .dialTopRight {
+  background: url(../img/dial_tr_red.png) top right no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 71, ../sass/partials/_states.scss */
+  #app #app-inner #game.active .dialTopRight {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 71, ../sass/partials/_states.scss */
+  #app #app-inner #game.active .dialTopRight {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 80, ../sass/partials/_states.scss */
+#app #app-inner #game.active .dialBottomRight {
+  background: url(../img/dial_br_red.png) bottom right no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 80, ../sass/partials/_states.scss */
+  #app #app-inner #game.active .dialBottomRight {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 80, ../sass/partials/_states.scss */
+  #app #app-inner #game.active .dialBottomRight {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 89, ../sass/partials/_states.scss */
+#app #app-inner #game.active .dialBottomLeft {
+  background: url(../img/dial_bl_red.png) bottom left no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 89, ../sass/partials/_states.scss */
+  #app #app-inner #game.active .dialBottomLeft {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 89, ../sass/partials/_states.scss */
+  #app #app-inner #game.active .dialBottomLeft {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+/* line 99, ../sass/partials/_states.scss */
+#app #app-inner #game.active #statusInactive {
+  visibility: hidden;
+}
+/* line 102, ../sass/partials/_states.scss */
+#app #app-inner #game.active #statusActive {
+  visibility: visible;
+}
+/* line 106, ../sass/partials/_states.scss */
+#app #app-inner #game.active #feedback {
+  visibility: visible;
+}
+
+/* line 3, ../sass/partials/_buttons.scss */
+.btn, .btn-border, .btn-replay {
+  color: #ff6868;
+  font-family: "proxima_nova-semibold", arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 22, ../sass/partials/_buttons.scss */
+.btn {
+  font-size: 10px;
+}
+
+/* line 27, ../sass/partials/_buttons.scss */
+.btn-border, .btn-replay {
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 16px 15px;
+  margin-bottom: 14px;
+  display: inline-block;
+  border: 1px solid rgba(255, 104, 104, 0.7);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*a .btn-replay  {
+    display:block;
+    width:100%;
+    border:1px solid orange;
+    text-align:center;
+    line-height:50px;
+}
+
+a:before .btn-replay {
+    content:url(../img/replay_icon.png);
+    display:inline-block;
+    margin-right:5px;
+}*/
+/* line 61, ../sass/partials/_buttons.scss */
+.restart-btn {
+  background: url(../img/replayicon.png) 0 center no-repeat;
+  padding-left: 23px;
+  color: #ff6868;
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 2, ../sass/modules/_game.scss */
+#game {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* line 9, ../sass/modules/_game.scss */
+#game #menu .status {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  color: #ff6868;
+  text-align: center;
+}
+/* line 16, ../sass/modules/_game.scss */
+#game #menu #startAgainButton {
+  position: absolute;
+  right: 4%;
+  top: 10%;
+  color: #ff6868;
+}
+/* line 24, ../sass/modules/_game.scss */
+#game #activateDial {
+  display: none;
+}
+/* line 28, ../sass/modules/_game.scss */
+#game #controlDial {
+  display: none;
+}
+/* line 33, ../sass/modules/_game.scss */
+#game #controls {
+  width: 100%;
+  z-index: 1;
+}
+/* line 36, ../sass/modules/_game.scss */
+#game #controls #fingerprint {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* line 42, ../sass/modules/_game.scss */
+#game #controls #dragLine {
+  position: absolute;
+  width: 86%;
+  height: 2px;
+  left: 7%;
+  bottom: 30%;
+  background: url(../img/drag_line.png) top left no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+/* line 52, ../sass/modules/_game.scss */
+#game #controls #dragCircle {
+  position: absolute;
+  width: 215px;
+  height: 172px;
+  left: 7%;
+  bottom: 30%;
+  z-index: 00;
+  background: url(../img/drag_circle.png) center no-repeat;
+}
+@media only screen and (max-width: 720px) and (orientation: portrait) {
+  /* line 52, ../sass/modules/_game.scss */
+  #game #controls #dragCircle {
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 52, ../sass/modules/_game.scss */
+  #game #controls #dragCircle {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+  }
+}
+
+/* line 2, ../sass/modules/_gameWin.scss */
+#gameWin {
+  visibility: hidden;
+}
+/* line 6, ../sass/modules/_gameWin.scss */
+#gameWin .contentCentre, #gameWin .gameContentCentre {
+  top: 16%;
+}
+
+/* line 2, ../sass/modules/_gameLose.scss */
+#gameLose {
+  visibility: hidden;
+}
+/* line 6, ../sass/modules/_gameLose.scss */
+#gameLose .contentCentre, #gameLose .gameContentCentre {
+  top: 16%;
+}
+
+/* line 2, ../sass/modules/_rotateBack.scss */
+#rotateBack {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 5;
+}
+/* line 14, ../sass/modules/_rotateBack.scss */
+#rotateBack p {
+  top: 0;
+  bottom: 0;
+}
+/* line 19, ../sass/modules/_rotateBack.scss */
+#rotateBack #rotateBackMessage {
+  position: relative;
+  top: 50%;
+  margin: -100px auto 0px auto;
+  text-align: center;
+  	   /*@media only screen and (max-width: 720px) {
+              width: 139px;
+              height: 180px;
+              @include prefix('background-size', $img-scale-720);
+          }*/
+}
+/* line 31, ../sass/modules/_rotateBack.scss */
+#rotateBack #rotateBackMessage #rotateBackIcon {
+  width: 139px;
+  height: 180px;
+  margin: 0px auto 0px auto;
+  background: url(../img/rotate_back_icon.png) center no-repeat;
+}
+@media only screen and (max-width: 720px) {
+  /* line 31, ../sass/modules/_rotateBack.scss */
+  #rotateBack #rotateBackMessage #rotateBackIcon {
+    width: 70px;
+    height: 90px;
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -ms-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+}
+/* line 47, ../sass/modules/_rotateBack.scss */
+#rotateBack #rotateBackMessage p {
+  top: 0px;
+  bottom: 0px;
+  display: inline;
+}
